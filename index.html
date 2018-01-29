@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <nav class="navigation">
+            <div class="navigation__logo">
+                <img src="https://eyeforce.nl/wp-content/themes/eyeforce/img/favicon.ico"/>
+                <span>My Website</span>
+            </div>
+
+            <div class="navigation__hamburger">
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="hamburgerMenu()">&#9776;</a>
+            </div>
+
+            <div class="navigation__menu" id="navigation__menu">
+                <menuitem><a href="#">Home</a></menuitem>
+                <menuitem><a href="#">Projects</a></menuitem>
+                <menuitem><a href="#">About Us</a></menuitem>
+                <menuitem><a href="#">Our Services</a></menuitem>
+                <menuitem><a href="#">Contact</a></menuitem>
+            </div>
+
+        </nav>
+
+        <header class="video">
+            <div class="video__background">
+                <video src="background-vid.mov" autoplay="autoplay" loop="loop" muted></video>
+            </div>
+            <div class="video__overlay"></div>
+            <div class="video__foreground">
+                <h1>Welcome Everyone</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id temporibus perferendis necessitatibus numquam amet impedit explicabo? Debitis quasi ullam aperiam!</p>
+                <a class="btn">Find Out More</a>
+            </div>
+        </header>
+
+        <section class="projects">
+            <div class="projects__row">
+                <img src="http://unsplash.it/620?image=0">
+                <span>Some Title</span>
+            </div>
+            <div class="projects__row">
+                <img src="http://unsplash.it/620?image=10">
+                <span>Some Title</span>
+            </div>
+            <div class="projects__row">
+                <img src="http://unsplash.it/620?image=40">
+                <span>Some Title</span>
+            </div>
+            <div class="projects__row">
+                <img src="http://unsplash.it/620?image=50">
+                <span>Some Title</span>
+            </div>
+            <div class="projects__row">
+                <img src="http://unsplash.it/620?image=100">
+                <span>Some Title</span>
+            </div>
+            <div class="projects__row">
+                <img src="http://unsplash.it/620?image=110">
+                <span>Some Title</span>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__description">
+                <h1>Some About Title</h1>
+                <p>
+                    Company is an award winning film production company with roots in the travel- and adventure sports industry.
+                    We produce tailor-made content for global brands like Red Bull, KLM, UBER, Corona and many more.
+                    We produce TV-commercials, branded content, series, documentaries and feature films. Our team consists of directors,
+                    cameramen, editors and producers, which enables us to work 'lean and mean' and be flexible whenever needed.
+                    From inception to completion, we hold true to our belief that good things are done by people who love what they do and
+                    that passion underpins every project we undertake so that we can help you present your vision to the world as it truly should be shown.
+                </p>
+                <button class="about__button" type="button">GET IN TOUCH</button>
+            </div>
+        </section>
+
+        <section class="directors">
+            <div class="directors__description">
+                <h1>Directors</h1>
+                <p>
+                    Meet our directors. Coming from very different backgrounds, and with a wide variety of skill sets, one of these guys is
+                    guaranteed to turn your project into awesomeness.
+                </p>
+                <ul>
+                    <li>ANDRES ROTH</li>
+                    <li>ANDRES ROTH</li>
+                    <li>ANDRES ROTH</li>
+                    <li>ANDRES ROTH</li>
+                    <li>ANDRES ROTH</li>
+                </ul>
+            </div>
+            <div class="directors__images">
+                <div class="directors__image">
+                    <h1>ANDREAS ROTH</h1>
+                    <p>
+                        If you envision something spectacular, Andres is the first in line to make it bigger, and make it happen.
+                    </p>
+                    <a href="#">SEE PORTFOLIO</a>
+                </div>
+                <div class="directors__image">
+                    <h1>ANDREAS ROTH</h1>
+                    <p>
+                        If you envision something spectacular, Andres is the first in line to make it bigger, and make it happen.
+                    </p>
+                    <a href="#">SEE PORTFOLIO</a>
+                </div>
+                <div class="directors__image">
+                    <h1>ANDREAS ROTH</h1>
+                    <p>
+                        If you envision something spectacular, Andres is the first in line to make it bigger, and make it happen.
+                    </p>
+                    <a href="#">SEE PORTFOLIO</a>
+                </div>
+                <div class="directors__image">
+                    <h1>ANDREAS ROTH</h1>
+                    <p>
+                        If you envision something spectacular, Andres is the first in line to make it bigger, and make it happen.
+                    </p>
+                    <a href="#">SEE PORTFOLIO</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="services__row">
+                <div class="services__service">
+                    <h2>CONCEPT DEVELOPMENT</h2>
+                </div>
+                <div class="services__service">
+                    <h2>CONCEPT DEVELOPMENT</h2>
+                </div>
+            </div>
+            <div class="services__row">
+                <div class="services__service">
+                    <h2>CONCEPT DEVELOPMENT</h2>
+                </div>
+                <div class="services__service">
+                    <h2>CONCEPT DEVELOPMENT</h2>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="contact">
+                <div class="contact__info">
+                    <h1>Contact Info</h1>
+                    <p>
+                        ADDRESS
+                        STREET
+                        THE NETHERLANDS
+                        +PHONE NUMBER
+                        EMAIL
+                        KVK NUMBER
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script type="text/javascript">
+        function hamburgerMenu() {
+            let nav = document.getElementById("navigation__menu");
+            if (nav.className === "navigation__menu") {
+                nav.className += " responsive";
+            } else {
+                nav.className = "navigation__menu";
+            }
+        }
+    </script>
+</body>
+</html>
