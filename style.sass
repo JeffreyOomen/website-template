@@ -18,6 +18,12 @@ body
 body
   background: $primary-text-color
 
+h1
+  margin: 0
+
+.clear-float
+  clear: both
+
 // Navigation Block Styles
 .navigation
   overflow: hidden
@@ -72,7 +78,7 @@ body
 @media screen and (max-width: 600px)
   .navigation__menu.responsive
     position: relative
-    clear: left
+    clear: leftf
     float: left
 
   .navigation__hamburger.responsive a
@@ -100,7 +106,6 @@ body
   text-align: center
   overflow: hidden
 
-
 .video__background
   position: absolute
   top: 40px
@@ -122,7 +127,6 @@ body
   z-index: 1
   background: darkblue
   opacity: 0.5
-
 
 .video__foreground
   z-index: 2
@@ -147,12 +151,11 @@ body
 // Projects Section
 .projects
   width: 100%
-  height: auto
+  height: 100%
 
 .projects__row
   width: 100%
   margin: 0
-  float: left
   position: relative
   overflow: hidden
   
@@ -177,10 +180,46 @@ body
 
 .projects__row:hover span
   opacity: 1
+  transition: 0.5s
 
 @media screen and (min-width: 760px)
   .projects__row
     width: 50%
+    float: left
 
+// About Section
+.about
+  position: relative
+  width: 100%
+  min-height: 100vh
+  background-image: url("https://eyeforce.nl/wp-content/uploads/2017/01/about.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  overflow: hidden
 
+.about__description
+  font-family: "roboto",sans-serif
+  color: $primary-text-color
+  padding: 60px
+  line-height: 1.5rem
 
+.about__description h1
+  margin-bottom: 30px
+  text-transform: uppercase
+  letter-spacing: .15rem
+
+.about__description p
+  margin-bottom: 40px
+
+.about__link
+  text-decoration: none
+  color: $primary-text-color
+  font-size: 1.4rem
+  font-weight: 400
+
+.about__link i
+  font-size: 1.8rem
+
+@media screen and (min-width: 760px)
+  .about__description
+    width: 50%
